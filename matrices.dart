@@ -86,7 +86,6 @@ class Matrix {
     Matrix newMatrix = Matrix(_row, _col);
     for (int i = 0; i < _row; i++) {
       for (int j = 0; j < _col; j++) {
-        double value = getAt(i, j);
         double result = function(getAt(i, j));
         newMatrix.setAt(i, j, value: result);
       }
@@ -241,7 +240,7 @@ Matrix zeros(int row, int col) {
   return Matrix(row, col);
 }
 
-Matrix fill(int num, int row, int col) {
+Matrix fill(num num, int row, int col) {
   Matrix matrix = Matrix(row, col);
   matrix.fill(num.toDouble());
   return matrix;
@@ -257,11 +256,7 @@ Matrix dot(Matrix matrixA, Matrix matrixB) {
 
 dynamic sum(Matrix matrix, int axis) {
   Matrix newMatrix = matrix.sum(axis: axis);
-  if (newMatrix._col == 1 && newMatrix._row == 1) {
-    return newMatrix.getAt(0, 0);
-  } else {
-    return newMatrix;
-  }
+  return newMatrix;
 }
 
 double mean(Matrix matrix) {
