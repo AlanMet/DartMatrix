@@ -1,1 +1,1 @@
-# Basic Matrix library in dart
+# Basic Matrix class in dart
