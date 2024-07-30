@@ -312,6 +312,14 @@ Matrix leakyDeriv(Matrix matrix) {
   return matrix.performFunction((x) => x > 0 ? 1.0 : 0.01);
 }
 
+Matrix linear(Matrix matrix) {
+  return matrix;
+}
+
+Matrix linearDeriv(Matrix matrix) {
+  return fill(1, matrix.getRow(), matrix.getCol());
+}
+
 Matrix Function(Matrix) derivative(Matrix Function(Matrix) activation) {
   final activationMap = {
     sigmoid: sigmoidDeriv,
@@ -319,6 +327,7 @@ Matrix Function(Matrix) derivative(Matrix Function(Matrix) activation) {
     relu: reluDeriv,
     leakyRelu: leakyDeriv,
     softmax: softmaxDeriv,
+    linear: linearDeriv,
   };
 
   if (activationMap.containsKey(activation)) {
