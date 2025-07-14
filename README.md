@@ -5,20 +5,6 @@ Designed for numerical computing, neural network utilities, and general matrix o
 
 can be downloaded through [pub.dev](https://pub.dev/packages/dart_matrix/install)
 
-
-## 📂 Project Structure
-
-test/
-matrices/
-├── matrix.dart # Core Matrix class and basic operations
-├── matrices.dart # Higher-level matrix functions and batch operations
-├── nnutils.dart # Neural network utility functions (activation, loss, etc.)
-├── utils.dart # Helper functions (math helpers, validation, etc.)
-
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚀 Getting Started
