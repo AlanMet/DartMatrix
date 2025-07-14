@@ -2,8 +2,8 @@
 
 A lightweight and efficient matrix manipulation library written in Dart.  
 Designed for numerical computing, neural network utilities, and general matrix operations.
-
 can be downloaded through [pub.dev](https://pub.dev/packages/dart_matrix/install)
+
 ---
 
 ## 📂 Project Structure
